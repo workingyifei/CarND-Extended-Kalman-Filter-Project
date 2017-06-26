@@ -67,10 +67,10 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       * Create the covariance matrix.
       * Remember: you'll need to convert radar from polar to cartesian coordinates.
     */
-    // first measurement
-    cout << "EKF: " << endl;
+//    // first measurement
+//    cout << "EKF: " << endl;
     ekf_.x_ = VectorXd(4);
-    ekf_.x_ << 1, 1, 1, 1;
+//    ekf_.x_ << 0.11, 0.1, 0.1, 0.1;
 
     //the initial transition matrix F_
     ekf_.F_ << 1, 0, 0, 0,
